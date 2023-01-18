@@ -4,6 +4,7 @@ import './Home.css'
 import FoodItemCard from './../../components/FoodItemCard/FoodItemCard'
 
 import {currentUser} from './../../util/currentUser'
+import {loginRequired} from './../../util/loginRequired'
 
 function Home() {
 
@@ -39,9 +40,10 @@ function Home() {
     window.location.href = '/login'
   }
 
-  if(!currentUser){
-    window.location.href = '/login'
-  }
+
+  useEffect(()=>{
+      loginRequired()
+  }, [])
 
   return (
     <div>
