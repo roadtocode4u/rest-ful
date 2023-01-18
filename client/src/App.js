@@ -6,6 +6,7 @@ import Login from "./views/Login/Login"
 import Signup from "./views/Signup/Signup"
 import BookTable from './views/BookTable/BookTable'
 import MyOrders from './views/MyOrders/MyOrders'
+import MyList from './views/MyList/MyList'
 import Profile from './views/Profile/Profile'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/bookTable" element={<BookTable/>} />
+          <Route path="/myList" element={<MyList/>} />
           <Route path="/myOrders" element={<MyOrders/>} />
           <Route path="/profile" element={<Profile/>} />
         </Routes>
